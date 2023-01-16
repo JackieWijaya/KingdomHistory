@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 tampilDataGrid();
                 break;
             case R.id.menu_about:
-                tampilDataAbout();
+                startActivity(new Intent(MainActivity.this, AboutActivity.class));
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -80,9 +80,5 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Nama Kingdom: " + data.getNama(), Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    private void tampilDataAbout(){
-        startActivity(new Intent(MainActivity.this, AboutActivity.class));
     }
 }

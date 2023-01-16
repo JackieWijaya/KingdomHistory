@@ -29,7 +29,8 @@ public class DetailActivity extends AppCompatActivity {
         tvNama.setText(yNama);
         tvTentang.setText(yTentang);
 
-        Glide.with(DetailActivity.this)
+        Glide
+                .with(DetailActivity.this)
                 .load(yFoto)
                 .into(ivFoto);
     }

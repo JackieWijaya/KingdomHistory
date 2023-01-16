@@ -9,4 +9,8 @@
         android:id="@+id/menu_grid"
         android:title="Menu Grid"/>
 
+    <item
+        android:id="@+id/menu_about"
+        android:title="About"/>
+
 </menu>

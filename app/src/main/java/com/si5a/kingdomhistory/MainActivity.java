@@ -43,7 +43,10 @@ public class MainActivity extends AppCompatActivity {
                 tampilDataCard();
                 break;
             case R.id.menu_grid:
-                tampildataGrid();
+                tampilDataGrid();
+                break;
+            case R.id.menu_about:
+                tampilDataAbout();
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -66,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void tampildataGrid(){
+    private void tampilDataGrid(){
         rvKingdom.setLayoutManager(new GridLayoutManager(this,2));
         AdapterGrid colokanGrid = new AdapterGrid(data);
         rvKingdom.setAdapter(colokanGrid);
@@ -77,5 +80,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Nama Kingdom: " + data.getNama(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void tampilDataAbout(){
+        startActivity(new Intent(MainActivity.this, AboutActivity.class));
     }
 }

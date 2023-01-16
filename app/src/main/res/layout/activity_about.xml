@@ -13,15 +13,33 @@
         android:text="Create By"
         style="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
-        android:layout_centerInParent="true"
-        android:paddingBottom="10dp"/>
+        android:layout_centerInParent="true"/>
 
     <TextView
+        android:id="@+id/tv_jackie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jackie Wijaya"
         style="@style/TextAppearance.AppCompat.Medium"
         android:layout_centerInParent="true"
         android:layout_below="@+id/tv_create_by" />
+
+    <TextView
+        android:id="@+id/tv_salwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salwa Fakira Imleta"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tv_jackie"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wiji Kurniawan"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tv_salwa"/>
+
 
 </RelativeLayout>

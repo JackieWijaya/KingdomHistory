@@ -21,6 +21,10 @@ public class DetailActivity extends AppCompatActivity {
 
         initView();
 
+//        tvNama = findViewById(R.id.tv_nama_kingdom);
+//        tvTentang = findViewById(R.id.tv_tentang_kingdom);
+//        ivFoto = findViewById(R.id.)
+
         Intent terima = getIntent();
         yNama = terima.getStringExtra("xNama");
         yTentang = terima.getStringExtra("xTentang");
@@ -38,6 +42,6 @@ public class DetailActivity extends AppCompatActivity {
     private void initView(){
         tvNama = findViewById(R.id.tv_nama_kingdom);
         tvTentang = findViewById(R.id.tv_tentang_kingdom);
-        ivFoto = findViewById(R.id.iv_kingdom);
+        ivFoto = findViewById(R.id.iv_foto);
     }
 }

@@ -37,7 +37,7 @@
             android:layout_below="@+id/tv_nama_kingdom"/>
 
         <Button
-            android:id="@+id/btn_lihat_lokasi"
+            android:id="@+id/btn_lokasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
